@@ -53,10 +53,6 @@ filename of each position is added into an array list to get the number of files
 
 ## Run the program
 
-### Set the target folder
-
-WordIndex.java, which holds the main method, is where the words are read and indexed from the text files. Set the folder (from which the text files will be read) in line number N to 'TextFiles' or 'TextFiles_Shakespeare' to read from the default project data. To read from custom data, add your own text files in the 'YOUR_FOLDER_NAME' folder.
-
 ### Set the commands
 
 The commands will be read from the _commands.txt_ file. The supported commands are: addall, add, remove, search, and overview. Below is a list of explanations and example use for each command:
@@ -95,4 +91,9 @@ overview
 
 ## Performance Evaluation
 
- <img src="./images/performance.png" width="150" />
+ <img src="./images/performance.png" width="500" />
+ 
+The time increases at a very small steady rate as the number of words inserted in the hash table based map increases. The performance and efficiency is quite high. Initially the linked list based map takes around the same amount of time as the hash map to insert words. As the number of words increases the time increases exponentially, especially when inserting the file “06kr4mnd.txt” with 48363 words. 
+
+This proves the big Oh notation for the hash table map to insert words and checking if they exist in the map or not for insertion has worst case complexity of O(N). The worst case complexity for the linked list map is O(N2), since the increase in the number of words is drastically changing the time taken after a certain point.
+
