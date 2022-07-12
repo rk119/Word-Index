@@ -53,6 +53,9 @@ filename of each position is added into an array list to get the number of files
 
 ## Run the program
 
+### Set the target folder
+WordIndex.java, which holds the main method, is where the words are read and indexed from the text files. Set the folder (from which the text files will be read) in line number N to 'TextFiles' or 'TextFiles_Shakespeare' to read from the default project data. 
+
 ### Set the commands
 
 The commands will be read from the _commands.txt_ file. The supported commands are: addall, add, remove, search, and overview. Below is a list of explanations and example use for each command:
