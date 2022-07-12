@@ -95,4 +95,4 @@ overview
 
 ## Performance Evaluation
 
-performance.png
+ <img src="./images/performance.png" width="150" />
